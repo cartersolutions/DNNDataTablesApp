@@ -1,0 +1,21 @@
+<table id="usersTable" datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Temp</th>
+            <th>High</th>
+            <th>Low</th>
+        </tr>
+    </thead>
+  <tbody *ngIf='cities?.length != 0'>
+      <tr *ngFor='let city of cities'>
+          <td>{{ city.Id }}</td>
+          <td>{{ city.Name }}</td>
+          <td>{{ city.Temp }}</td>
+          <td>{{ city.High }}</td>
+          <td>{{ city.Low }}</td>
+      </tr>
+  </tbody>
+</table>
+<router-outlet></router-outlet>
