@@ -24,6 +24,7 @@
     "datatables.net": "^1.10.20",
     "datatables.net-dt": "^1.10.20",
     "jquery": "^3.4.1",
+    "minimist": "0.2.1",
     "ngx-spinner": "^8.1.0",
     "rxjs": "~6.4.0",
     "serialize-javascript": "2.1.1",
